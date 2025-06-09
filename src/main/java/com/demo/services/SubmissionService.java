@@ -28,7 +28,33 @@ public class SubmissionService {
 	
 	for(Response r:res)
 	{
-		if(r.getAnswer_selected().equals(question.get(count).getRightanswer()))
+		
+		
+		String ans=question.get(count).getRightanswer();
+		
+		if(ans.equals("option1"))
+		{
+			ans=question.get(count).getOption1();
+		}
+		
+		else if(ans.equals("option2"))
+		{
+			ans=question.get(count).getOption2();
+		}
+		
+		else	if(ans.equals("option3"))
+		{
+			ans=question.get(count).getOption3();
+		}
+		else	if(ans.equals("option4"))
+		{
+			ans=question.get(count).getOption4();
+		}
+		
+		System.out.println(r.getAnswer_selected()+"  "+ans);
+		
+		
+		if(r.getAnswer_selected().equals(ans))
 			right_answer++;
 		count++;
 	}
