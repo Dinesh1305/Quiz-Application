@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.demo.model.Questions;
-import com.demo.repo.QuestionRepo;
+import com.demo.repository.QuestionRepo;
 
 @Service
 public class QuestionService {

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import com.demo.model.QuestionWrapper;
 import com.demo.model.Questions;
 import com.demo.model.Quiz;
-import com.demo.repo.QuizRepo;
+import com.demo.repository.QuizRepo;
 
 @Service
 public class QuizServices {
